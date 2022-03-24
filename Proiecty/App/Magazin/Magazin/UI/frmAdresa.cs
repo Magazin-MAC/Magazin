@@ -14,11 +14,17 @@ namespace Magazin.UI
 {
     public partial class frmAdresa : Form
     {
+<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmAdresa()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
+=======
+        public frmAdresa()
+        {
+            InitializeComponent();
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
         AdresaDAL dal = new AdresaDAL();
         AdresaBLL a = new AdresaBLL();
@@ -172,11 +178,14 @@ namespace Magazin.UI
                 MessageBox.Show("Adresa nu a fost stearsa.");
             }
         }
+<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

@@ -47,19 +47,31 @@ namespace Magazin.UI
             this.lblNume = new System.Windows.Forms.Label();
             this.txtOras = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFurnizor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFurnizor)).BeginInit();
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.SuspendLayout();
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
+<<<<<<< HEAD
             this.pictureBoxClose.Location = new System.Drawing.Point(1035, 11);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(17, 20);
+=======
+            this.pictureBoxClose.Location = new System.Drawing.Point(1023, 0);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(32, 32);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxClose.TabIndex = 1;
             this.pictureBoxClose.TabStop = false;
@@ -71,7 +83,11 @@ namespace Magazin.UI
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(495, 4);
             this.label1.Name = "label1";
+<<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(91, 23);
+=======
+            this.label1.Size = new System.Drawing.Size(107, 28);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.label1.TabIndex = 0;
             this.label1.Text = "Furnizori";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -79,8 +95,12 @@ namespace Magazin.UI
             // 
             // panel1
             // 
+<<<<<<< HEAD
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.pictureBox1);
+=======
+            this.panel1.BackColor = System.Drawing.Color.Red;
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.panel1.Controls.Add(this.pictureBoxClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,11 +108,18 @@ namespace Magazin.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1055, 39);
             this.panel1.TabIndex = 4;
+<<<<<<< HEAD
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.DeepSkyBlue;
+=======
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(16, 346);
             this.btnDelete.Name = "btnDelete";
@@ -104,7 +131,11 @@ namespace Magazin.UI
             // 
             // btnUpdate
             // 
+<<<<<<< HEAD
             this.btnUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
+=======
+            this.btnUpdate.BackColor = System.Drawing.Color.Red;
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(16, 297);
             this.btnUpdate.Name = "btnUpdate";
@@ -116,7 +147,11 @@ namespace Magazin.UI
             // 
             // btnAdd
             // 
+<<<<<<< HEAD
             this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
+=======
+            this.btnAdd.BackColor = System.Drawing.Color.Red;
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(16, 248);
             this.btnAdd.Name = "btnAdd";
@@ -132,7 +167,11 @@ namespace Magazin.UI
             this.lblSearch.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSearch.Location = new System.Drawing.Point(342, 68);
             this.lblSearch.Name = "lblSearch";
+<<<<<<< HEAD
             this.lblSearch.Size = new System.Drawing.Size(61, 19);
+=======
+            this.lblSearch.Size = new System.Drawing.Size(71, 22);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblSearch.TabIndex = 39;
             this.lblSearch.Text = "Cautare";
             // 
@@ -142,12 +181,19 @@ namespace Magazin.UI
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(419, 66);
             this.txtSearch.Name = "txtSearch";
+<<<<<<< HEAD
             this.txtSearch.Size = new System.Drawing.Size(624, 27);
+=======
+            this.txtSearch.Size = new System.Drawing.Size(624, 30);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtSearch.TabIndex = 38;
             // 
             // dgvFurnizor
             // 
+<<<<<<< HEAD
             this.dgvFurnizor.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.dgvFurnizor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFurnizor.Location = new System.Drawing.Point(346, 101);
             this.dgvFurnizor.Name = "dgvFurnizor";
@@ -173,7 +219,11 @@ namespace Magazin.UI
             this.lblCod.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCod.Location = new System.Drawing.Point(65, 68);
             this.lblCod.Name = "lblCod";
+<<<<<<< HEAD
             this.lblCod.Size = new System.Drawing.Size(22, 19);
+=======
+            this.lblCod.Size = new System.Drawing.Size(26, 22);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblCod.TabIndex = 35;
             this.lblCod.Text = "Id";
             // 
@@ -183,7 +233,11 @@ namespace Magazin.UI
             this.txtNume.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNume.Location = new System.Drawing.Point(97, 101);
             this.txtNume.Name = "txtNume";
+<<<<<<< HEAD
             this.txtNume.Size = new System.Drawing.Size(205, 27);
+=======
+            this.txtNume.Size = new System.Drawing.Size(205, 30);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtNume.TabIndex = 34;
             // 
             // lblPrenume
@@ -192,7 +246,11 @@ namespace Magazin.UI
             this.lblPrenume.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrenume.Location = new System.Drawing.Point(45, 135);
             this.lblPrenume.Name = "lblPrenume";
+<<<<<<< HEAD
             this.lblPrenume.Size = new System.Drawing.Size(37, 19);
+=======
+            this.lblPrenume.Size = new System.Drawing.Size(46, 22);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblPrenume.TabIndex = 33;
             this.lblPrenume.Text = "Tara";
             this.lblPrenume.Click += new System.EventHandler(this.lblPrenume_Click);
@@ -203,7 +261,11 @@ namespace Magazin.UI
             this.txtId.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(97, 66);
             this.txtId.Name = "txtId";
+<<<<<<< HEAD
             this.txtId.Size = new System.Drawing.Size(205, 27);
+=======
+            this.txtId.Size = new System.Drawing.Size(205, 30);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtId.TabIndex = 32;
             // 
             // lblNume
@@ -212,7 +274,11 @@ namespace Magazin.UI
             this.lblNume.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNume.Location = new System.Drawing.Point(35, 103);
             this.lblNume.Name = "lblNume";
+<<<<<<< HEAD
             this.lblNume.Size = new System.Drawing.Size(50, 19);
+=======
+            this.lblNume.Size = new System.Drawing.Size(56, 22);
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblNume.TabIndex = 31;
             this.lblNume.Text = "Nume";
             this.lblNume.Click += new System.EventHandler(this.lblNume_Click);
@@ -233,6 +299,7 @@ namespace Magazin.UI
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(45, 165);
             this.label2.Name = "label2";
+<<<<<<< HEAD
             this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 43;
             this.label2.Text = "Oras";
@@ -254,6 +321,16 @@ namespace Magazin.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
+=======
+            this.label2.Size = new System.Drawing.Size(48, 22);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Oras";
+            // 
+            // frmFurnizor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.ClientSize = new System.Drawing.Size(1055, 427);
             this.Controls.Add(this.txtOras);
             this.Controls.Add(this.label2);
@@ -280,7 +357,10 @@ namespace Magazin.UI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFurnizor)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,6 +385,9 @@ namespace Magazin.UI
         private System.Windows.Forms.Label lblNume;
         private System.Windows.Forms.TextBox txtOras;
         private System.Windows.Forms.Label label2;
+<<<<<<< HEAD
         private System.Windows.Forms.PictureBox pictureBox1;
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

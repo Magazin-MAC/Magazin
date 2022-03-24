@@ -15,11 +15,17 @@ namespace Magazin.UI
 {
     public partial class frmComanda : Form
     {
+<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmComanda()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
+=======
+        public frmComanda()
+        {
+            InitializeComponent();
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
         ComandaDAL dal = new ComandaDAL();
         ComandaBLL c = new ComandaBLL();
@@ -153,11 +159,14 @@ namespace Magazin.UI
             DataTable dt = dal.Select();
             dgvComanda.DataSource = dt;
         }
+<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

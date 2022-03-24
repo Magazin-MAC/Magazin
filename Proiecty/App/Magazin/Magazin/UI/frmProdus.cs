@@ -14,12 +14,18 @@ namespace Magazin.UI
 {
     public partial class frmProdus : Form
     {
+<<<<<<< HEAD
 
         frmAdminDashboard frm;
         public frmProdus()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
+=======
+        public frmProdus()
+        {
+            InitializeComponent();
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
 
         private void lblCod_Click(object sender, EventArgs e)
@@ -161,11 +167,14 @@ namespace Magazin.UI
                 MessageBox.Show("Produsul nu a fost sters.");
             }
         }
+<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

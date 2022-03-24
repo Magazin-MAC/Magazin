@@ -14,11 +14,17 @@ namespace Magazin.UI
 {
     public partial class frmCategories : Form
     {
+<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmCategories()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
+=======
+        public frmCategories()
+        {
+            InitializeComponent();
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
 
         private void frmCategories_Load(object sender, EventArgs e)
@@ -148,11 +154,14 @@ namespace Magazin.UI
         {
 
         }
+<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
+=======
+>>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }
