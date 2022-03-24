@@ -14,9 +14,11 @@ namespace Magazin.UI
 {
     public partial class frmProdCom : Form
     {
+        frmAdminDashboard frm;
         public frmProdCom()
         {
             InitializeComponent();
+            frm = new frmAdminDashboard();
         }
         ProdComBLL p = new ProdComBLL();
         ProdComDAL dal = new ProdComDAL();
@@ -114,6 +116,12 @@ namespace Magazin.UI
             {
                 MessageBox.Show("ProdCom nu a fost sters.");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm.Show();
         }
     }
 }

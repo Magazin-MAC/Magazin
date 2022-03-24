@@ -14,9 +14,11 @@ namespace Magazin.UI
 {
     public partial class frmCategories : Form
     {
+        frmAdminDashboard frm;
         public frmCategories()
         {
             InitializeComponent();
+            frm = new frmAdminDashboard();
         }
 
         private void frmCategories_Load(object sender, EventArgs e)
@@ -145,6 +147,12 @@ namespace Magazin.UI
         private void txtId_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm.Show();
         }
     }
 }

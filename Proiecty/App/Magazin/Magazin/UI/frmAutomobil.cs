@@ -16,9 +16,11 @@ namespace Magazin.UI
     {
         AutomobilDAL dal = new AutomobilDAL();
         AutomobilBLL a = new AutomobilBLL();
+        frmAdminDashboard frm;
         public frmAutomobil()
         {
             InitializeComponent();
+            frm = new frmAdminDashboard();
         }
         public void Clear()
         {
@@ -137,6 +139,12 @@ namespace Magazin.UI
             {
                 MessageBox.Show("Automobilul nu a fost sters.");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm.Show();
         }
     }
 }
