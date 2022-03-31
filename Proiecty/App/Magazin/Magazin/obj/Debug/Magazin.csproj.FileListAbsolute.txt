@@ -40,7 +40,6 @@ F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magaz
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.CoreCompileInputs.cache
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.exe
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.pdb
-C:\Users\alexs\Desktop\MDS\Proiect2\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.AssemblyReference.cache
 C:\Users\alexs\Desktop\MDS\Proiect2\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAdresa.resources
 C:\Users\alexs\Desktop\MDS\Proiect2\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAutoComp.resources
 C:\Users\alexs\Desktop\MDS\Proiect2\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAutomobil.resources

@@ -239,8 +239,7 @@ namespace Magazin.DAL
 
             try
             {
-                string sql = "SELECT PC.comanda_id, CONCAT(A.oras , ', ' ,A.strada , ', ' , A.numar) Adresa, CL.nume, CL.prenume, C.data_comanda, P.nume_produs, P.cod_produs, P.pret, cantitate, sum(P.pret * cantitate) 'SUMA COMANDA' FROM PRODUSE_COMANDATE PC JOIN PRODUS P ON P.cod_produs = PC.cod_produs JOIN COMANDA C ON PC.comanda_id = C.comanda_id JOIN ADRESA A ON A.adresa_id = C.adresa_id JOIN CLIENT CL ON A.client_id = CL.client_id WHERE PC.comanda_id=@comanda_id GROUP BY PC.comanda_id, C.adresa_id, CL.nume,Cl.prenume,C.data_comanda,C.stare, A.oras,A.strada, A.numar, P.nume_produs, P.cod_produs, P.pret, cantitate";
-                SqlCommand cmd = new SqlCommand(sql, conn);
+                string sql = "SELECT PC.comanda_id, CONCAT(A.oras , ', ' ,A.strada , ', ' , A.numar), CL.nume, CL.prenume, C.data_comanda, P.nume_produs 'Denumire produs', P.cod_produs 'Cod produs', P.pret 'Pret/bucata', cantitate 'Cantitate', sum(P.pret * cantitate) 'Pret' FROM PRODUSE_COMANDATE PC JOIN PRODUS P ON P.cod_produs = PC.cod_produs JOIN COMANDA C ON PC.comanda_id = C.comanda_id JOIN ADRESA A ON A.adresa_id = C.adresa_id JOIN CLIENT CL ON A.client_id = CL.client_id WHERE PC.comanda_id=@comanda_id GROUP BY PC.comanda_id, C.adresa_id, CL.nume,Cl.prenume,C.data_comanda,C.stare, A.oras,A.strada, A.numar, P.nume_produs, P.cod_produs, P.pret, cantitate";              SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@comanda_id", comanda_id);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 conn.Open();

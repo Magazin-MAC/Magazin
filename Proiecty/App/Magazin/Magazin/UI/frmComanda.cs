@@ -18,12 +18,15 @@ using iText.Layout.Properties;
 
 using System.Web.UI;
 using System.Web;
-
+using iText.Kernel.Pdf.Canvas.Draw;
+using iText.Kernel.Colors;
+using iText.Layout.Borders;
 
 namespace Magazin.UI
 {
     public partial class frmComanda : Form
     {
+        string pathFactura;
         frmAdminDashboard frm;
         public frmComanda()
         {
@@ -190,7 +193,7 @@ namespace Magazin.UI
 
             for (int row = 0; row < dt.Rows.Count; row++)
             {
-                string numeProdus = dgvComanda.Rows[row].Cells[5].Value.ToString();
+                nume_produs[row] = dgvComanda.Rows[row].Cells[5].Value.ToString();
                 cod_produs[row] = dgvComanda.Rows[row].Cells[6].Value.ToString();
                 pret[row] = dgvComanda.Rows[row].Cells[7].Value.ToString();
                 cantitate[row] = dgvComanda.Rows[row].Cells[8].Value.ToString();
@@ -198,88 +201,96 @@ namespace Magazin.UI
 
                 suma_per_cantitate_int[row] = Convert.ToDouble(dgvComanda.Rows[row].Cells[9].Value.ToString());
             }
+            pathFactura = "Facturi\\Factura_" + comandaID + "_" + nume + "_" + prenume + ".pdf";
+            PdfWriter writer = new PdfWriter(@pathFactura);
+            PdfDocument pdf = new PdfDocument(writer);
+            Document pdfDoc = new Document(pdf);
+            Paragraph titlu = new Paragraph("FACTURA")
+                                .SetTextAlignment(TextAlignment.CENTER)
+                                .SetFontSize(20);
+            Paragraph nrComanda = new Paragraph("NUMAR FACTURA: "+comandaID)
+                                    .SetTextAlignment(TextAlignment.RIGHT)
+                                    .SetFontSize(15);
+            Paragraph numeClient = new Paragraph(nume+ " " + prenume)
+                                    .SetTextAlignment(TextAlignment.LEFT)
+                                    .SetFontSize(12);
+            Paragraph adresaParagraph = new Paragraph("Adresa: "+adresa)
+                                    .SetTextAlignment(TextAlignment.LEFT)
+                                    .SetFontSize(10);
+            Paragraph dataComanda = new Paragraph("Data comanda: "+data_comanda)
+                                    .SetTextAlignment(TextAlignment.LEFT)
+                                    .SetFontSize(10);
+            LineSeparator ls = new LineSeparator(new SolidLine());
+            pdfDoc.Add(titlu);
+            pdfDoc.Add(nrComanda);
+            pdfDoc.Add(numeClient);
+            pdfDoc.Add(adresaParagraph);
+            pdfDoc.Add(dataComanda);
 
-            StringBuilder sb=null;
+            //pdfDoc.Add(ls);
 
-            /**********TO DO***********/
-            using (StringWriter sw = new StringWriter())
+
+            Table table = new Table(dt.Columns.Count-5, true);
+            Cell[] cells=new Cell[dt.Columns.Count];
+
+            for (int i = 0; i < dt.Columns.Count; i++)
             {
-                using (HtmlTextWriter hw = new HtmlTextWriter(sw))
-                {
-                     sb = new StringBuilder();
-
-                    //Generate Invoice (Bill) Header.
-                    sb.Append("<table width='100%' cellspacing='0' cellpadding='2'>");
-                    sb.Append("<tr><td align='center' style='background-color: #18B5F0' colspan = '2'><b>Order Sheet</b></td></tr>");
-                    sb.Append("<tr><td colspan = '2'></td></tr>");
-                    sb.Append("<tr><td><b>Numar comanda: </b>");
-                    sb.Append(comandaID);
-                    sb.Append("</td><td align = 'right'><b>Data: </b>");
-                    sb.Append(DateTime.Now);
-                    sb.Append(" </td></tr>"); 
-                    sb.Append("</td><td align = 'right'><b>Data comanda: </b>");
-                    sb.Append(data_comanda);
-                    sb.Append(" </td></tr>");
-                    sb.Append("<tr><td colspan = '2'><b>Nume Prenume: </b>");
-                    sb.Append(nume+" "+prenume);
-                    sb.Append("</td></tr>");
-                    sb.Append("</table>");
-                    sb.Append("<br />");
-
-                    //Generate Invoice (Bill) Items Grid.
-                    sb.Append("<table border = '1'>");
-                    sb.Append("<tr>");
-                    foreach (DataColumn column in dt.Columns)
-                    {
-                        sb.Append("<th style = 'background-color: #D20B0C;color:#ffffff'>");
-                        sb.Append(column.ColumnName);
-                        sb.Append("</th>");
-                    }
-                    sb.Append("</tr>");
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        sb.Append("<tr>");
-                        foreach (DataColumn column in dt.Columns)
-                        {
-                            sb.Append("<td>");
-                            sb.Append(row[column]);
-                            sb.Append("</td>");
-                        }
-                        sb.Append("</tr>");
-                    }
-                    sb.Append("<tr><td align = 'right' colspan = '");
-                    sb.Append(dt.Columns.Count - 1);
-                    sb.Append("'>Total</td>");
-                    sb.Append("<td>");
-                    //sb.Append(dt.Compute("sum(Total)", ""));
-                    //sb.Append("</td>");
-                    sb.Append("</tr></table>");
-
-                    //Export HTML String as PDF.
-                    StringReader sr = new StringReader(sb.ToString());
-                   // Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
-                   // HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
-                    PdfWriter writer = new PdfWriter("C:\\Users\\alexs\\Desktop\\MDS\\Proiect2\\Factura.pdf");
-                    PdfDocument pdf = new PdfDocument(writer);
-                    Document pdfDoc = new Document(pdf);
-                    Paragraph paragraph = new Paragraph(sb.ToString());
-                    //pdfDoc.Open();
-                    pdfDoc.Add(paragraph);
-                    pdfDoc.Close();
-                    //Response.ContentType = "application/pdf";
-                    //Response.AddHeader("content-disposition", "attachment;filename=Invoice_" + orderNo + ".pdf");
-                    //Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                    //Response.Write(pdfDoc);
-                    //Response.End();
-                }
+                cells[i] = new Cell(1, 1)
+                          .SetBackgroundColor(ColorConstants.GRAY)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(dt.Columns[i].ColumnName)
+                                    .SetTextAlignment(TextAlignment.CENTER)
+                                    .SetFontSize(12));
+                
             }
+            for (int i = 5; i < dt.Columns.Count; i++)
+                table.AddCell(cells[i]);
+
+            for (int row = 0; row < dt.Rows.Count; row++)
+            {
+                table.AddCell(new Cell(1, 1)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(nume_produs[row])
+                                    .SetFontSize(8)));
+                table.AddCell(new Cell(1, 1)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(cod_produs[row])
+                                    .SetFontSize(8)));
+                table.AddCell(new Cell(1, 1)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(pret[row])
+                                    .SetFontSize(8)));
+                table.AddCell(new Cell(1, 1)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(cantitate[row])
+                                    .SetFontSize(8)));
+                table.AddCell(new Cell(1, 1)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph(suma_per_cantitate[row])
+                                    .SetFontSize(8)));
+
+            }
+            table.AddCell(new Cell(1, 5)
+                          .SetTextAlignment(TextAlignment.CENTER)
+                          .Add(new Paragraph("TOTAL: "+suma_per_cantitate_int.Sum().ToString())
+                                    .SetFontSize(12)));
+            
+            pdfDoc.Add(table);
+            pdfDoc.Close();
+
         }
+            
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             GenerateInvoicePDF();
-          
-         
+            MessageBox.Show("Factura a fost generata cu succes.");
+            Clear();
+            System.Diagnostics.Process.Start(pathFactura);
+            DataTable dt = dal.Select();
+            dgvComanda.DataSource = dt;
+            
         }
 
         private void txtSuma_TextChanged(object sender, EventArgs e)
