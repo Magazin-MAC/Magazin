@@ -64,5 +64,10 @@ namespace Magazin.UI
                 MessageBox.Show("Login Failed");
             }
         }
+
+        private void lblHeader_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

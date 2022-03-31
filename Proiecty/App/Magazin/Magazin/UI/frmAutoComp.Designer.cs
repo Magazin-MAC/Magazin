@@ -51,32 +51,20 @@ namespace Magazin.UI
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvAutoComp = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutoComp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAutoComp)).BeginInit();
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.SuspendLayout();
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.Image")));
-<<<<<<< HEAD
             this.pictureBoxClose.Location = new System.Drawing.Point(1026, 9);
             this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(21, 15);
-=======
-            this.pictureBoxClose.Location = new System.Drawing.Point(1152, 0);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(32, 32);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxClose.TabIndex = 1;
             this.pictureBoxClose.TabStop = false;
@@ -86,102 +74,63 @@ namespace Magazin.UI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(422, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 23);
-=======
-            this.label1.Location = new System.Drawing.Point(475, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 28);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.label1.TabIndex = 0;
             this.label1.Text = "Automobile compatibile";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
-<<<<<<< HEAD
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.pictureBox1);
-=======
-            this.panel1.BackColor = System.Drawing.Color.Red;
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.panel1.Controls.Add(this.pictureBoxClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1051, 31);
-=======
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1182, 39);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.panel1.TabIndex = 5;
             // 
             // txtProducator
             // 
             this.txtProducator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProducator.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtProducator.Location = new System.Drawing.Point(106, 177);
             this.txtProducator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProducator.Name = "txtProducator";
             this.txtProducator.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtProducator.Location = new System.Drawing.Point(107, 157);
-            this.txtProducator.Name = "txtProducator";
-            this.txtProducator.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtProducator.TabIndex = 80;
             // 
             // txtCodMotor
             // 
             this.txtCodMotor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodMotor.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtCodMotor.Location = new System.Drawing.Point(106, 148);
             this.txtCodMotor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodMotor.Name = "txtCodMotor";
             this.txtCodMotor.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtCodMotor.Location = new System.Drawing.Point(107, 121);
-            this.txtCodMotor.Name = "txtCodMotor";
-            this.txtCodMotor.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtCodMotor.TabIndex = 79;
             // 
             // txtModel
             // 
             this.txtModel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtModel.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtModel.Location = new System.Drawing.Point(106, 205);
             this.txtModel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtModel.Location = new System.Drawing.Point(107, 193);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtModel.TabIndex = 78;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(46, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 19);
-=======
-            this.label4.Location = new System.Drawing.Point(39, 197);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.label4.TabIndex = 77;
             this.label4.Text = "Model";
             // 
@@ -189,15 +138,9 @@ namespace Magazin.UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(15, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 19);
-=======
-            this.label2.Location = new System.Drawing.Point(4, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.label2.TabIndex = 76;
             this.label2.Text = "Cod Motor";
             // 
@@ -205,34 +148,20 @@ namespace Magazin.UI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(15, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 19);
-=======
-            this.label3.Location = new System.Drawing.Point(4, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.label3.TabIndex = 75;
             this.label3.Text = "Producator";
             // 
             // btnDelete
             // 
-<<<<<<< HEAD
             this.btnDelete.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(106, 423);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(171, 34);
-=======
-            this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(26, 529);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(286, 43);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnDelete.TabIndex = 74;
             this.btnDelete.Text = "Stergere";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -240,20 +169,12 @@ namespace Magazin.UI
             // 
             // btnUpdate
             // 
-<<<<<<< HEAD
             this.btnUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(106, 384);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(171, 34);
-=======
-            this.btnUpdate.BackColor = System.Drawing.Color.Red;
-            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(26, 480);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(286, 43);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnUpdate.TabIndex = 73;
             this.btnUpdate.Text = "Modificare";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -261,20 +182,12 @@ namespace Magazin.UI
             // 
             // btnAdd
             // 
-<<<<<<< HEAD
             this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(106, 345);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(171, 34);
-=======
-            this.btnAdd.BackColor = System.Drawing.Color.Red;
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(26, 431);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(286, 43);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.btnAdd.TabIndex = 72;
             this.btnAdd.Text = "Adaugare";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -284,31 +197,19 @@ namespace Magazin.UI
             // 
             this.txtAn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAn.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtAn.Location = new System.Drawing.Point(106, 234);
             this.txtAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAn.Name = "txtAn";
             this.txtAn.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtAn.Location = new System.Drawing.Point(107, 229);
-            this.txtAn.Name = "txtAn";
-            this.txtAn.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtAn.TabIndex = 71;
             // 
             // lblCod
             // 
             this.lblCod.AutoSize = true;
             this.lblCod.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.lblCod.Location = new System.Drawing.Point(78, 92);
             this.lblCod.Name = "lblCod";
             this.lblCod.Size = new System.Drawing.Size(22, 19);
-=======
-            this.lblCod.Location = new System.Drawing.Point(75, 51);
-            this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(26, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblCod.TabIndex = 70;
             this.lblCod.Text = "Id";
             // 
@@ -316,31 +217,19 @@ namespace Magazin.UI
             // 
             this.txtCodProd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodProd.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtCodProd.Location = new System.Drawing.Point(106, 119);
             this.txtCodProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodProd.Name = "txtCodProd";
             this.txtCodProd.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtCodProd.Location = new System.Drawing.Point(107, 85);
-            this.txtCodProd.Name = "txtCodProd";
-            this.txtCodProd.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtCodProd.TabIndex = 69;
             // 
             // lbltip
             // 
             this.lbltip.AutoSize = true;
             this.lbltip.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.lbltip.Location = new System.Drawing.Point(71, 236);
             this.lbltip.Name = "lbltip";
             this.lbltip.Size = new System.Drawing.Size(28, 19);
-=======
-            this.lbltip.Location = new System.Drawing.Point(68, 231);
-            this.lbltip.Name = "lbltip";
-            this.lbltip.Size = new System.Drawing.Size(33, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lbltip.TabIndex = 68;
             this.lbltip.Text = "An";
             // 
@@ -348,16 +237,10 @@ namespace Magazin.UI
             // 
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtId.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtId.Location = new System.Drawing.Point(106, 90);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(182, 27);
-=======
-            this.txtId.Location = new System.Drawing.Point(107, 49);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(205, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtId.TabIndex = 67;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
@@ -365,15 +248,9 @@ namespace Magazin.UI
             // 
             this.lblNume.AutoSize = true;
             this.lblNume.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.lblNume.Location = new System.Drawing.Point(16, 121);
             this.lblNume.Name = "lblNume";
             this.lblNume.Size = new System.Drawing.Size(87, 19);
-=======
-            this.lblNume.Location = new System.Drawing.Point(6, 87);
-            this.lblNume.Name = "lblNume";
-            this.lblNume.Size = new System.Drawing.Size(102, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblNume.TabIndex = 66;
             this.lblNume.Text = "Cod produs";
             // 
@@ -381,15 +258,9 @@ namespace Magazin.UI
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.lblSearch.Location = new System.Drawing.Point(291, 42);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(61, 19);
-=======
-            this.lblSearch.Location = new System.Drawing.Point(327, 53);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(71, 22);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.lblSearch.TabIndex = 83;
             this.lblSearch.Text = "Cautare";
             // 
@@ -397,22 +268,15 @@ namespace Magazin.UI
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.txtSearch.Location = new System.Drawing.Point(359, 41);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(681, 27);
-=======
-            this.txtSearch.Location = new System.Drawing.Point(404, 51);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(766, 30);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.txtSearch.TabIndex = 82;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dgvAutoComp
             // 
-<<<<<<< HEAD
             this.dgvAutoComp.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvAutoComp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutoComp.Location = new System.Drawing.Point(359, 70);
@@ -442,23 +306,6 @@ namespace Magazin.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1051, 482);
-=======
-            this.dgvAutoComp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAutoComp.Location = new System.Drawing.Point(404, 87);
-            this.dgvAutoComp.Name = "dgvAutoComp";
-            this.dgvAutoComp.RowHeadersWidth = 62;
-            this.dgvAutoComp.RowTemplate.Height = 28;
-            this.dgvAutoComp.Size = new System.Drawing.Size(766, 485);
-            this.dgvAutoComp.TabIndex = 81;
-            this.dgvAutoComp.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAutoComp_RowHeaderMouseClick);
-            // 
-            // frmAutoComp
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1182, 603);
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvAutoComp);
@@ -479,10 +326,7 @@ namespace Magazin.UI
             this.Controls.Add(this.lblNume);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.Name = "frmAutoComp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAutoComp";
@@ -491,10 +335,7 @@ namespace Magazin.UI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutoComp)).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,9 +364,6 @@ namespace Magazin.UI
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvAutoComp;
-<<<<<<< HEAD
         private System.Windows.Forms.PictureBox pictureBox1;
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

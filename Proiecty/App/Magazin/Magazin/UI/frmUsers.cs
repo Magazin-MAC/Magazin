@@ -14,17 +14,11 @@ namespace Magazin.UI
 {
     public partial class frmUsers : Form
     {
-<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmUsers()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
-=======
-        public frmUsers()
-        {
-            InitializeComponent();
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -157,14 +151,11 @@ namespace Magazin.UI
             dgvClient.DataSource = dt;
 
         }
-<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

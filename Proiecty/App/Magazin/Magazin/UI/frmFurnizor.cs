@@ -14,17 +14,11 @@ namespace Magazin.UI
 {
     public partial class frmFurnizor : Form
     {
-<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmFurnizor()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
-=======
-        public frmFurnizor()
-        {
-            InitializeComponent();
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
         FurnizorBLL f = new FurnizorBLL();
         FurnizorDAL dal = new FurnizorDAL();
@@ -132,7 +126,6 @@ namespace Magazin.UI
                 MessageBox.Show("Furnizorul nu a fost sters.");
             }
         }
-<<<<<<< HEAD
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -144,7 +137,5 @@ namespace Magazin.UI
             this.Hide();
             frm.Show();
         }
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

@@ -14,17 +14,11 @@ namespace Magazin.UI
 {
     public partial class frmAutoComp : Form
     {
-<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmAutoComp()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
-=======
-        public frmAutoComp()
-        {
-            InitializeComponent();
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
         AutoCompDAL dal = new AutoCompDAL();
         AutoCompBLL a = new AutoCompBLL();
@@ -151,14 +145,11 @@ namespace Magazin.UI
                 MessageBox.Show("AutoComp nu a fost sters.");
             }
         }
-<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

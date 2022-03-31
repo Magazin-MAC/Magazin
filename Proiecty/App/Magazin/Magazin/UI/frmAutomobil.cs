@@ -16,17 +16,11 @@ namespace Magazin.UI
     {
         AutomobilDAL dal = new AutomobilDAL();
         AutomobilBLL a = new AutomobilBLL();
-<<<<<<< HEAD
         frmAdminDashboard frm;
         public frmAutomobil()
         {
             InitializeComponent();
             frm = new frmAdminDashboard();
-=======
-        public frmAutomobil()
-        {
-            InitializeComponent();
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
         }
         public void Clear()
         {
@@ -146,14 +140,11 @@ namespace Magazin.UI
                 MessageBox.Show("Automobilul nu a fost sters.");
             }
         }
-<<<<<<< HEAD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
             frm.Show();
         }
-=======
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
     }
 }

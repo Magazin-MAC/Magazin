@@ -19,7 +19,6 @@ C:\Users\alexs\Desktop\BD\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmA
 C:\Users\alexs\Desktop\BD\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAdresa.resources
 C:\Users\alexs\Desktop\BD\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmProdCom.resources
 C:\Users\alexs\Desktop\BD\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmComanda.resources
-<<<<<<< HEAD
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.exe.config
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.exe
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.pdb
@@ -41,27 +40,3 @@ F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magaz
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.CoreCompileInputs.cache
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.exe
 F:\FACULTATE\Anul III\SEM II\MDS\Proiect\Magazin-main\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.pdb
-=======
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.exe.config
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.exe
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\bin\Debug\Magazin.pdb
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.AssemblyReference.cache
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.SuggestedBindingRedirects.cache
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAdresa.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAutoComp.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmAutomobil.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmCategories.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmComanda.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmFurnizor.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmLogin.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.frmAdminDashboard.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmProdus.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.frmUserDashboard.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.Properties.Resources.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmUsers.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.UI.frmProdCom.resources
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.GenerateResource.cache
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.csproj.CoreCompileInputs.cache
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.exe
-C:\Users\andre\OneDrive\Desktop\AN III\SEM 2\Metode de dezvoltare software\Proiect\Proiecty\App\Magazin\Magazin\obj\Debug\Magazin.pdb
->>>>>>> 5d8188a32d497cd10bfd658546fa2789367f2a23
