@@ -11,11 +11,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using iTextSharp.text.html.simpleparser;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+
 using System.Web.UI;
 using System.Web;
+
 
 namespace Magazin.UI
 {
@@ -166,7 +169,8 @@ namespace Magazin.UI
             frm.Show();
         }
 
-        protected void GenerateInvoicePDF(object sender, EventArgs e)
+        [Obsolete]
+        protected void GenerateInvoicePDF()
         {
             DataTable dt = dal.InvoiceBill(txtComandaID.Text);
             dgvComanda.DataSource = dt;
@@ -182,39 +186,42 @@ namespace Magazin.UI
             String[] pret = new String[dgvComanda.Rows.Count];
             String[] cantitate = new String[dgvComanda.Rows.Count];
             String[] suma_per_cantitate = new String[dgvComanda.Rows.Count];
-            int[] suma_per_cantitate_int = new int[dgvComanda.Rows.Count];
+            double[] suma_per_cantitate_int = new double[dgvComanda.Rows.Count];
 
-            for (int RowIndex = 0; RowIndex < dgvComanda.Rows.Count; RowIndex++)
+            for (int row = 0; row < dt.Rows.Count; row++)
             {
+                string numeProdus = dgvComanda.Rows[row].Cells[5].Value.ToString();
+                cod_produs[row] = dgvComanda.Rows[row].Cells[6].Value.ToString();
+                pret[row] = dgvComanda.Rows[row].Cells[7].Value.ToString();
+                cantitate[row] = dgvComanda.Rows[row].Cells[8].Value.ToString();
+                suma_per_cantitate[row] = dgvComanda.Rows[row].Cells[9].Value.ToString();
 
-                nume_produs[RowIndex] = dgvComanda.Rows[RowIndex].Cells[5].Value.ToString();
-                cod_produs[RowIndex] = dgvComanda.Rows[RowIndex].Cells[6].Value.ToString();
-                pret[RowIndex] = dgvComanda.Rows[RowIndex].Cells[7].Value.ToString();
-                cantitate[RowIndex] = dgvComanda.Rows[RowIndex].Cells[8].Value.ToString();
-                suma_per_cantitate[RowIndex] = dgvComanda.Rows[RowIndex].Cells[9].Value.ToString();
-                suma_per_cantitate_int[RowIndex] = Int32.Parse(dgvComanda.Rows[RowIndex].Cells[9].Value.ToString());
+                suma_per_cantitate_int[row] = Convert.ToDouble(dgvComanda.Rows[row].Cells[9].Value.ToString());
             }
-             
 
+            StringBuilder sb=null;
 
             /**********TO DO***********/
             using (StringWriter sw = new StringWriter())
             {
                 using (HtmlTextWriter hw = new HtmlTextWriter(sw))
                 {
-                    StringBuilder sb = new StringBuilder();
+                     sb = new StringBuilder();
 
                     //Generate Invoice (Bill) Header.
                     sb.Append("<table width='100%' cellspacing='0' cellpadding='2'>");
                     sb.Append("<tr><td align='center' style='background-color: #18B5F0' colspan = '2'><b>Order Sheet</b></td></tr>");
                     sb.Append("<tr><td colspan = '2'></td></tr>");
-                    sb.Append("<tr><td><b>Order No: </b>");
-                    sb.Append(orderNo);
-                    sb.Append("</td><td align = 'right'><b>Date: </b>");
+                    sb.Append("<tr><td><b>Numar comanda: </b>");
+                    sb.Append(comandaID);
+                    sb.Append("</td><td align = 'right'><b>Data: </b>");
                     sb.Append(DateTime.Now);
+                    sb.Append(" </td></tr>"); 
+                    sb.Append("</td><td align = 'right'><b>Data comanda: </b>");
+                    sb.Append(data_comanda);
                     sb.Append(" </td></tr>");
-                    sb.Append("<tr><td colspan = '2'><b>Company Name: </b>");
-                    sb.Append(companyName);
+                    sb.Append("<tr><td colspan = '2'><b>Nume Prenume: </b>");
+                    sb.Append(nume+" "+prenume);
                     sb.Append("</td></tr>");
                     sb.Append("</table>");
                     sb.Append("<br />");
@@ -244,31 +251,33 @@ namespace Magazin.UI
                     sb.Append(dt.Columns.Count - 1);
                     sb.Append("'>Total</td>");
                     sb.Append("<td>");
-                    sb.Append(dt.Compute("sum(Total)", ""));
-                    sb.Append("</td>");
+                    //sb.Append(dt.Compute("sum(Total)", ""));
+                    //sb.Append("</td>");
                     sb.Append("</tr></table>");
 
                     //Export HTML String as PDF.
                     StringReader sr = new StringReader(sb.ToString());
-                    Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
-                    HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
-                    pdfDoc.Open();
-                    htmlparser.Parse(sr);
+                   // Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
+                   // HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+                    PdfWriter writer = new PdfWriter("C:\\Users\\alexs\\Desktop\\MDS\\Proiect2\\Factura.pdf");
+                    PdfDocument pdf = new PdfDocument(writer);
+                    Document pdfDoc = new Document(pdf);
+                    Paragraph paragraph = new Paragraph(sb.ToString());
+                    //pdfDoc.Open();
+                    pdfDoc.Add(paragraph);
                     pdfDoc.Close();
-                    Response.ContentType = "application/pdf";
-                    Response.AddHeader("content-disposition", "attachment;filename=Invoice_" + orderNo + ".pdf");
-                    Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                    Response.Write(pdfDoc);
-                    Response.End();
+                    //Response.ContentType = "application/pdf";
+                    //Response.AddHeader("content-disposition", "attachment;filename=Invoice_" + orderNo + ".pdf");
+                    //Response.Cache.SetCacheability(HttpCacheability.NoCache);
+                    //Response.Write(pdfDoc);
+                    //Response.End();
                 }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DataTable dt = dal.InvoiceBill(txtComandaID.Text);
-            dgvComanda.DataSource = dt;
+            GenerateInvoicePDF();
           
          
         }
