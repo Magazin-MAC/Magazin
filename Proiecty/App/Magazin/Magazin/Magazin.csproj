@@ -140,7 +140,6 @@
     <Compile Include="BLL\ClientBLL.cs" />
     <Compile Include="BLL\ComandaBLL.cs" />
     <Compile Include="BLL\FurnizorBLL.cs" />
-    <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\ProdComBLL.cs" />
     <Compile Include="BLL\ProdusBLL.cs" />
     <Compile Include="DAL\AdresaDAL.cs" />
@@ -150,7 +149,6 @@
     <Compile Include="DAL\ClientDAL.cs" />
     <Compile Include="DAL\ComandaDAL.cs" />
     <Compile Include="DAL\FurnizorDAL.cs" />
-    <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\ProdComDAL.cs" />
     <Compile Include="DAL\ProdusDAL.cs" />
     <Compile Include="UI\frmAdresa.cs">
@@ -189,23 +187,11 @@
     <Compile Include="UI\frmFurnizor.Designer.cs">
       <DependentUpon>frmFurnizor.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\frmUserDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmUserDashboard.Designer.cs">
-      <DependentUpon>frmUserDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmAdminDashboard.cs">
       <SubType>Form</SubType>
@@ -245,17 +231,11 @@
     <EmbeddedResource Include="UI\frmFurnizor.resx">
       <DependentUpon>frmFurnizor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmAdminDashboard.resx">
       <DependentUpon>frmAdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmProdus.resx">
       <DependentUpon>frmProdus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmUserDashboard.resx">
-      <DependentUpon>frmUserDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

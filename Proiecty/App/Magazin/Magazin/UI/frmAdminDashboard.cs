@@ -28,11 +28,6 @@ namespace Magazin
 
         }
 
-        private void lblLogedInUser_Load(object sender, EventArgs e)
-        {
-            lblLogedInUser.Text = frmLogin.loggedIn;
-        }
-
         private void utilizatoriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUsers user = new frmUsers();
@@ -42,8 +37,8 @@ namespace Magazin
 
         private void frmAdminDashboard_FormClosed(object sender, FormClosedEventArgs e)
         {
-            frmLogin login = new frmLogin();
-            login.Show();
+            //frmLogin login = new frmLogin();
+            //login.Show();
             this.Hide();
         }
 

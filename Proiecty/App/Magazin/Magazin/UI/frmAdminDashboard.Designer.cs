@@ -244,7 +244,7 @@ namespace Magazin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAdminDashboard_FormClosed);
-            this.Load += new System.EventHandler(this.lblLogedInUser_Load);
+            //this.Load += new System.EventHandler(this.lblLogedInUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
